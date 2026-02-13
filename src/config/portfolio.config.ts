@@ -9,14 +9,14 @@
 // PERSONAL PROFILE
 // ============================================
 export const profile = {
-  name: 'Your Name',
-  title: 'Full Stack Developer',
-  subtitle: 'Building modern web applications with passion',
-  bio: 'I am a passionate Full Stack Developer with expertise in building scalable web applications. With a strong foundation in both frontend and backend technologies, I create seamless user experiences backed by robust server-side solutions.',
-  email: 'your.email@example.com',
-  location: 'City, Country',
+  name: 'Timothy Jake Flordelis',
+  title: 'SW Engineer | Full Stack Developer | Mobile Developer | AI Enthusiast',
+  subtitle: 'Building modern applications with passion',
+  bio: 'Experienced Software Engineer with more than 18 years in IT, specializing in Full Stack Development for web, mobile, and desktop applications. Skilled in leading development, testing, and implementation, with a strong track record of enhancing functionality, performance, and code quality through reviews, troubleshooting, and optimized solutions. Currently a Senior Developer at Bloomerang through Full Scale Philippines, driving Full Stack Development initiatives. Proficient in C#, .NET, Java, JavaScript, TypeScript, Kotlin, and Python.',
+  email: 'jake.flordelis@gmail.com',
+  location: 'Cebu City, Philippines',
   avatar: '/avatar-placeholder.jpg',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: 'https://docs.google.com/document/d/1w-oOItELPBPm_-6EDh699Sy5qmXqlqiG/edit?usp=sharing&ouid=104666018290464652073&rtpof=true&sd=true',
 };
 
 // ============================================
@@ -25,22 +25,22 @@ export const profile = {
 export const socialLinks = [
   {
     platform: 'github' as const,
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/jekeytimoy29',
     label: 'GitHub',
   },
   {
     platform: 'linkedin' as const,
-    url: 'https://linkedin.com/in/yourusername',
+    url: 'https://www.linkedin.com/in/timothy-jake-flordelis/',
     label: 'LinkedIn',
   },
   {
     platform: 'twitter' as const,
-    url: 'https://twitter.com/yourusername',
+    url: 'https://twitter.com/jekeytimoy29',
     label: 'Twitter',
   },
   {
     platform: 'email' as const,
-    url: 'mailto:your.email@example.com',
+    url: 'mailto:jake.flordelis@gmail.com',
     label: 'Email',
   },
 ];
@@ -217,8 +217,8 @@ export const projects = [
 // SITE METADATA (for SEO)
 // ============================================
 export const siteMetadata = {
-  title: 'Portfolio | Full Stack Developer',
-  description: 'Professional portfolio showcasing web development projects and skills',
-  siteUrl: 'https://yourportfolio.com',
+  title: 'Portfolio | Software Engineer',
+  description: 'Professional portfolio showcasing development projects and skills',
+  siteUrl: 'https://jekeytimoy29.github.io/my-portfolio-v3-gen-ai-web-portfolio/',
   ogImage: '/og-image.png',
 };
