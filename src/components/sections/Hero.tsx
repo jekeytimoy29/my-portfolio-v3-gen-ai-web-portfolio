@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { profile, socialLinks } from '../../data/profile';
-import { Button } from '../common/Button';
-import { fadeInUp, staggerContainer } from '../../utils/animations';
+import { motion } from "framer-motion";
+import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { profile, socialLinks } from "../../data/profile";
+import { Button } from "../common/Button";
+import { fadeInUp, staggerContainer } from "../../utils/animations";
 
 export function Hero() {
   const handleScrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -36,9 +36,20 @@ export function Hero() {
           {/* Avatar placeholder */}
           <motion.div variants={fadeInUp} className="mb-8">
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-1">
-              <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-4xl font-bold text-primary-600 dark:text-primary-400">
-                {profile.name.split(' ').map(n => n[0]).join('')}
-              </div>
+              {profile.avatar ? (
+                <img
+                  src={profile.avatar}
+                  alt="Profile Picture"
+                  className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-4xl font-bold text-primary-600 dark:text-primary-400"
+                />
+              ) : (
+                <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 flex items-center justify-center text-4xl font-bold text-primary-600 dark:text-primary-400">
+                  {profile.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </div>
+              )}
             </div>
           </motion.div>
 
@@ -86,7 +97,7 @@ export function Hero() {
                 <a
                   key={link.platform}
                   href={link.url}
-                  target={link.platform !== 'email' ? '_blank' : undefined}
+                  target={link.platform !== "email" ? "_blank" : undefined}
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-white dark:bg-slate-800 shadow-md hover:shadow-lg text-slate-600 hover:text-primary-600 dark:text-slate-400 dark:hover:text-primary-400 transition-all duration-200 hover:-translate-y-1"
                   aria-label={link.label}
@@ -104,14 +115,14 @@ export function Hero() {
           >
             <Button
               size="lg"
-              onClick={() => handleScrollToSection('#projects')}
+              onClick={() => handleScrollToSection("#projects")}
             >
               View My Work
             </Button>
             <Button
               variant="outline"
               size="lg"
-              onClick={() => handleScrollToSection('#contact')}
+              onClick={() => handleScrollToSection("#contact")}
             >
               Get In Touch
             </Button>
@@ -127,7 +138,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <button
-          onClick={() => handleScrollToSection('#about')}
+          onClick={() => handleScrollToSection("#about")}
           className="p-2 text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors animate-bounce-slow"
           aria-label="Scroll to About section"
         >
