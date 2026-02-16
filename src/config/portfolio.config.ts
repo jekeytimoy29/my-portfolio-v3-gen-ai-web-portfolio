@@ -1,3 +1,5 @@
+import ProfilePic from '../images/profile-pic.jpeg'
+
 /**
  * Portfolio Configuration
  *
@@ -15,7 +17,7 @@ export const profile = {
   bio: 'Experienced Software Engineer with more than 18 years in IT, specializing in Full Stack Development for web, mobile, and desktop applications. Skilled in leading development, testing, and implementation, with a strong track record of enhancing functionality, performance, and code quality through reviews, troubleshooting, and optimized solutions. Currently a Senior Developer at Bloomerang through Full Scale Philippines, driving Full Stack Development initiatives. Proficient in C#, .NET, Java, JavaScript, TypeScript, Kotlin, and Python.',
   email: 'jake.flordelis@gmail.com',
   location: 'Cebu City, Philippines',
-  avatar: '/avatar-placeholder.jpg',
+  avatar: ProfilePic,
   resumeUrl: 'https://docs.google.com/document/d/1w-oOItELPBPm_-6EDh699Sy5qmXqlqiG/edit?usp=sharing&ouid=104666018290464652073&rtpof=true&sd=true',
 };
 
@@ -274,25 +276,55 @@ export const projects = [
   },
   {
     id: '3',
-    title: 'Task Management System',
-    description: 'A collaborative project management tool with real-time updates and team workspaces.',
-    longDescription: 'Created a Trello-like task management system with drag-and-drop functionality, real-time collaboration using WebSockets, team workspaces, and detailed analytics dashboards.',
-    image: '/projects/task-manager.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Socket.io'],
-    liveUrl: 'https://example-tasks.com',
-    sourceUrl: 'https://github.com/yourusername/task-manager',
+    title: 'Personal Website',
+    description: 'Designed personal website hosted on GitHub.io. Implemented client frontend and server backend development. Utilized HTML, CSS, JavaScript, jQuery, Node.js, Express, and EJS.',
+    longDescription: '',
+    image: '',
+    technologies: ['JavaScript', 'HTML/CSS', 'NodeJS', 'ExpressJS', 'EJS', 'jQuery'],
+    liveUrl: 'https://jekeytimoy29.github.io/my-portfolio-v1/',
+    sourceUrl: 'https://github.com/jekeytimoy29/my-portfolio-v1',
     featured: true,
-    category: 'Full Stack',
+    category: 'Frontend',
   },
   {
     id: '4',
-    title: 'Analytics Dashboard',
-    description: 'Real-time analytics dashboard with customizable widgets and data visualization.',
-    image: '/projects/analytics.jpg',
-    technologies: ['React', 'D3.js', 'Node.js', 'ClickHouse', 'Redis'],
-    sourceUrl: 'https://github.com/yourusername/analytics',
+    title: 'Camila and Amber Movies Mobile App',
+    description: 'Another client app developed using React-Native to create mobile apps for iOS and Android. This will support GraphQL API with AWS DynamoDB to retrieve and search for movies. It also includes features for login/logout and register user using AWS Cognito. The backend GraphQL API and AWS Cognito for this client app is the same with Movies Web App',
+    image: '',
+    technologies: ['React Native', 'Android', 'iOS', 'AWS Cognito', 'GraphQL'],
+    sourceUrl: 'https://github.com/jekeytimoy29/CamilaAmberMoviesReactNative',
     featured: false,
-    category: 'Data Visualization',
+    category: 'Mobile',
+  },
+  {
+    id: '5',
+    title: 'Camila and Amber Movies App hosted with AWS Amplify',
+    description: 'An app where it shows movies collection and user can register, add their comments about each movie. An admin account can manage movies and users of the app. Implemented the whole MERN stack app. Utilized AWS, React, Node, Express, MongoDB and Docker.',
+    image: '',
+    technologies: ['React', 'AWS Amplify', 'AWS Cognito', 'GraphQL', 'Cloud Computing'],
+    sourceUrl: 'https://github.com/jekeytimoy29/CamilaAndAmberMoviesAWSAmplify',
+    featured: false,
+    category: 'Full Stack',
+  },
+  {
+    id: '6',
+    title: 'Data Analytics System',
+    description: 'A microservices system that allows participation of data, analysis of data, and generating analysis report. Implemented the Data Input Services where it sends messages to the broker. Utilized Spring Boot, MongoDB, Kafka, and React.',
+    image: '',
+    technologies: ['Java', 'Spring Boot', 'MongoDB', 'Kafka', 'Microservices', 'Event-Driven Architecture'],
+    sourceUrl: 'https://github.com/jekeytimoy29/DataInputService',
+    featured: false,
+    category: 'Backend',
+  },
+  {
+    id: '7',
+    title: 'Library System',
+    description: 'Created system to manage library functionalities as part of team. Utilized Java and Swing.',
+    image: '',
+    technologies: ['Java', 'Swing'],
+    sourceUrl: 'https://github.com/jekeytimoy29/LibrarySystem',
+    featured: false,
+    category: 'Desktop',
   },
 ];
 
